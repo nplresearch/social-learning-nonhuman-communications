@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="Images/panel_github.png" width="800"/>
+  <img src="Images/panel_github.png" width="600"/>
 </p>
