@@ -41,7 +41,7 @@
 # **WHL**: Whales
 > Papers regarding animal communication or general methodology applied specifically for animal communication.
 
-##### **Bronstein 2019**: _Predictive Bayesian selection of multistep Markov chains, applied to the detection of the hot hand and other statistical dependencies in free throws_
+##### **Bronstein 2019**: _Deep Machine Learning Techniques for the Detection and Classification of Sperm Whale Bioacoustics_
 * Some Summary
 
 
