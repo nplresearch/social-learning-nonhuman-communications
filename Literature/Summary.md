@@ -18,17 +18,14 @@
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
 
-#### garivier
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-#### gustafsson
 <dl>
-  <dt>The name of the paper that sometimes can be pretty long I have to say</dt>
-  <dd>Is something people use sometimes.</dd>
+  <dt><span style="font-weight: normal;"> Garivier 2019:</span> Some other title dudeee</dt>
+  <dd>Is something people use sometimes. Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. </dd>
+</dl>
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+<dl>
+  <dt><span style="font-weight:normal">Gustafsson 2018:</span> The name of the paper that sometimes can be pretty long I have to say</dt>
+  <dd>Is something people use sometimes. Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. </dd>
 </dl>
 
 ## **INF**: Information Theory
@@ -36,3 +33,10 @@
 ## **MCM**: Markov Chain Models
 
 ## **WHL**: Whales
+
+
+
+
+
+
+
