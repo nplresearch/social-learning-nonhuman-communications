@@ -23,7 +23,7 @@
 ## Tasks
 
 > Expand for details
-<details>
+<details open>
   <summary>
     <strong>Individual Whale Identification</strong>
   </summary>
@@ -32,7 +32,7 @@
 </details>
 
 
-<details>
+<details open>
   <summary>
     <strong>Varible Length Markov Chain</strong>
   </summary>
@@ -41,7 +41,7 @@
   </p>
 </details>
 
-<details>
+<details open>
   <summary>
     <strong>Markov Chain Modeling</strong>
   </summary>
@@ -50,7 +50,7 @@
   </p>
 </details>
 
-<details>
+<details open>
   <summary>
     <strong>Coda Information Rate</strong>
   </summary>
