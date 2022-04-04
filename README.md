@@ -10,15 +10,8 @@
   <a href="https://docs.google.com/document/d/13n4-3t70HZsvDpl_a2F-aijfi6leenky4wJN7Z8dJkM/edit">Monthly Agenda</a> •
   <a href="https://github.com/Antonio-Leitao/CETI/tree/main/Literature">Literature</a> •
   <a href="https://docs.google.com/document/d/13n4-3t70HZsvDpl_a2F-aijfi6leenky4wJN7Z8dJkM/edit">Code & Data</a> •
-  <a href="#FAQ">FAQ</a>
+  <a href="https://github.com/earthspecies/library">The Competition</a>
 </p>
-
-## Contents
-- [ ] Individual Whale Identification
-- [ ] Variable Length Markov Model  
-  - [ ] Shuffled and standard tree comparison.
-- [x] Markov Chain Modeling
-- [x] Coda Information Rate
 
 ## Tasks
 
