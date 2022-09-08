@@ -1,1 +1,1 @@
-#### This is jsut the first commit, I will clean things up and add instructions as I go
+#### Uploaded code and notebook necessary to get the VLMC state networks and merged algos
