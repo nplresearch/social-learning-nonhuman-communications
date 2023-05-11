@@ -7,6 +7,7 @@ import unidecode
 
 # - rolling_window
 # - flatten
+# - gen_batches
 # - gen_even_slices
 # - Compound Unique
 # - (Subset unique) (To be added)
@@ -25,6 +26,19 @@ def rolling_window(a, window):
 
 def flatten(t):
     return [item for sublist in t for item in sublist]
+
+def gen_batches(n, batch_size, *, min_batch_size=0):
+    if batch_size <= 0:
+        raise ValueError("gen_batches got batch_size=%s, must be positive" % batch_size)
+    start = 0
+    for _ in range(int(n // batch_size)):
+        end = start + batch_size
+        if end + min_batch_size > n:
+            continue
+        yield slice(start, end)
+        start = end
+    if start < n:
+        yield slice(start, n)
 
 
 def gen_even_slices(n, n_packs, *, n_samples=None):
@@ -148,3 +162,5 @@ def read_parse(path_to_file):
     for a in df.to_numpy():
         raw_sequences.extend(a[0].split())
     return raw_sequences
+
+

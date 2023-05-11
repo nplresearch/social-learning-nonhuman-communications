@@ -9,6 +9,7 @@ from utils import rolling_window
 # - VLMC
 # - MCM
 # - preprocess_clicks
+# - distance
 
 #####################
 
@@ -310,3 +311,25 @@ class MCM:
                 self.A[ids[i], ux[i, -1]] = self.N[i, 1] / self.N[i, 0]
 
         return self
+    
+def distance(treeA,treeB,tol = 1e-10):
+    """
+    Assymetry comes from two sides: non injective map and KL Divergence
+    Jensen-Shannon fixes only one of them.
+    
+    """
+    seqsB = [treeB.sequences[i] for i in treeB.matrix]
+    dist = [entropy(treeA.get_dist(0), treeB.get_dist(0) + tol)]
+    for context_indexA in treeA.matrix:
+        distA = treeA.get_dist(context_indexA)
+        seqA = treeA.sequences[context_indexA]
+        
+        #go up the tree untill you find correspondence (suffix function)
+        for i in range(len(seqA)+1):
+            if seqA[i:] in seqsB:
+                context_indexB = treeB.sequences.index(seqA[i:])
+                distB = treeB.get_dist(context_indexB)
+                dist.append(entropy(distA, distB + tol))
+                break
+          # add tolerance to avoid inf values of entropy
+    return np.mean(dist)
